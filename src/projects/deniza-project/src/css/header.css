@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 60px;
+  margin-top: 15px;
+  align-items: center;
+}
+.header__log {
+  background: #0FB3AF;
+  border: 1px solid #0FB3AF;
+  box-shadow: 0px 5px 15px -3px rgba(15, 179, 175, 0.18);
+  border-radius: 5px;
+  padding: 5px 25px;
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.header__nav {
+  display: flex;
+  gap: 64px;
+}
+.header__nav-text {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3C3C3B;
+}
+.header__nav-text:hover {
+  color: #0FB3AF;
+}/*# sourceMappingURL=header.css.map */
