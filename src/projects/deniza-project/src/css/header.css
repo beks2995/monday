@@ -32,4 +32,9 @@
 }
 .header__nav-text:hover {
   color: #0FB3AF;
+}
+
+@font-face {
+  font-family: "Maven Pro";
+  src: url("/src/projects/deniza-project/src/fonts/maven-pro/mavenpro.css");
 }/*# sourceMappingURL=header.css.map */

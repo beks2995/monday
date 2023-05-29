@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Maven Pro";
+  src: url("/src/projects/deniza-project/src/fonts/maven-pro/mavenpro.css");
+}
+.rating {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  left: 15px;
+}
+.rating__link {
+  background: #3C3C3B;
+  box-shadow: 0px 5px 15px -3px rgba(60, 60, 59, 0.18);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating__values {
+  bottom: -15px;
+  left: -15px;
+  position: absolute;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #7E7E7E;
+}
+.rating__numbers {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #0FB3AF;
+  position: absolute;
+  left: -15px;
+  top: 5px;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  color: #ddd;
+  float: right;
+}
+.rating label:before {
+  content: "★";
+  font-size: 25px;
+  padding-bottom: 5px;
+  border-radius: 50%;
+}
+.rating input:checked ~ label, .rating.rating:not(:checked) label:hover, .rating.rating:not(:checked) label:hover ~ label {
+  color: #0FB3AF;
+}
+
+.variants {
+  margin-top: 60px;
+}
+.variants__card {
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  height: 378px;
+  width: 350px;
+  margin-bottom: 50px;
+}
+.variants__card-ratings {
+  display: flex;
+  gap: 180px;
+  align-items: center;
+}
+.variants__card-info {
+  padding: 12px;
+}
+.variants__card-title {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3C3C3B;
+  margin-bottom: 22px;
+}
+.variants__card-img {
+  border-radius: 10px;
+  width: 350px;
+}/*# sourceMappingURL=variants.css.map */
