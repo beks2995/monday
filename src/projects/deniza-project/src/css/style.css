@@ -178,6 +178,42 @@
 }
 .footnav {
   display: flex;
+  margin-top: 70px;
+  margin-bottom: 300px;
+  justify-content: center;
+  align-items: center;
+  gap: 39px;
+}
+.footnav__item {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #3C3C3B;
+  opacity: 0.6;
+}
+.footnav__icon {
+  width: 18.83px;
+  height: 12.96px;
+  object-fit: contain;
+}
+.footnav__icon_left {
+  width: 18.83px;
+  height: 12.96px;
+  object-fit: contain;
+}
+
+#blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0FB3AF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
 }
 
 * {

@@ -58,11 +58,7 @@
 @font-face {
   font-family: "Maven Pro";
   src: url("/src/projects/deniza-project/src/fonts/maven-pro/mavenpro.css");
-}/*# sourceMappingURL=style.css.map */on: absolute;
-  bottom: -20px;
-  right: -10px;
-  rotate: 5deg;
-}
+}/*# sourceMappingURL=style.css.map */
 .card-section .card:hover {
   transform: scale(1s);
   cursor: pointer;
