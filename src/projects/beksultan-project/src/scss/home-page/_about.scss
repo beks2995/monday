@@ -1,0 +1,91 @@
+.about {
+    background: url(../img/aboutus/bg.png);
+    height: 710px;
+    position: relative;
+    margin: 0px 88px;
+
+    &-block {
+        width: 548px;
+        height: 477px;
+        padding: 52px 44px;
+        background: #FFFFFF;
+        position: absolute;
+        left: calc(50% - 547.48px/2 + 325.51px);
+        top: calc(50% - 476.84px/2 - 0.2px);
+
+        &__title {
+            width: 140.86px;
+            height: 26.88px;
+            margin-bottom: 0;
+            border: 1px solid #CECECE;
+            padding: 2px 0 0 15px;
+            position: relative;
+            font-family: 'Lato' sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 142%;
+            letter-spacing: 0.415em;
+            text-transform: uppercase;
+        }
+
+        &__h3 {
+            font-family: 'Montserrat' sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 130%;
+            color: #1C1C1C;
+            margin-top: 13px;
+        }
+
+        &__description {
+            font-family: 'Lato' sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 142%;
+            color: #545454;
+            margin-bottom: 30px;
+        }
+
+        &-col {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            &__p {
+                font-family: 'Lato' sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 142%;
+                color: #1C1C1C;
+                margin: 0;
+            }
+        }
+
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 197px;
+            height: 60px;
+            background: #0152A8;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 160%;
+            color: #FFFFFF;
+            margin-top: 30px;
+            transition: .5s;
+
+            &:hover {
+                background: none;
+                border: 1px solid #0152A8;
+                color: #0152A8;
+            }
+        }
+    }
+}

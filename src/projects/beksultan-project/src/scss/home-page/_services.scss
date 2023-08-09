@@ -1,0 +1,127 @@
+.services {
+    padding: 0 18%;
+    margin-bottom: 140px;
+
+    &-block {
+        &-top {
+            text-align: center;
+
+            &__subtxt {
+                font-family: 'Lato' sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 142%;
+                letter-spacing: 0.415em;
+                text-transform: uppercase;
+                color: #1C1C1C;
+            }
+
+            &__title {
+                font-family: 'Montserrat' sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 130%;
+                text-align: center;
+                color: #1C1C1C;
+                margin-bottom: 24px;
+            }
+        }
+
+        &-bottom {
+            &-col {
+                background: #F1F1F1;
+                padding: 45px 30px;
+                margin-bottom: 20px;
+                width: 285.27px;
+                height: 304.9px;
+
+                &-6 {
+                    display: flex;
+                    justify-content: center;
+
+
+                    &__img {
+                        height: 304.9px;
+                    }
+                }
+
+                &-content {
+                    background: #F1F1F1;
+                    padding: 45px 30px;
+                    margin-bottom: 20px;
+                    width: 285.27px;
+                    height: 304.9px;
+                }
+
+                &__title {
+                    font-family: 'Montserrat' sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 114.5%;
+                    color: #1C1C1C;
+                    margin-top: 17px;
+                    margin-bottom: 11px;
+                }
+
+                &__description {
+                    font-family: 'Lato' sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 142%;
+                    color: #545454;
+                    margin-bottom: 11px;
+                }
+
+                &__btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    width: max-content;
+                    font-family: 'Inter' sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #363636;
+                    transition: .6s;
+
+                    &:hover {
+                        color: #0152A8;
+
+                        .fa-circle-xmark {
+                            transition: .6s;
+                            color: #0152A8;
+                        }
+                    }
+
+                    .fa-circle-xmark {
+                        color: #C9C9C9;
+                        rotate: 45deg;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1830px) {
+    .services{
+        padding: 0 13%;
+    }
+}
+
+@media screen and (max-width:1560px) {
+    .services{
+        padding: 0 10%;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .services{
+        padding: 0 5%;
+    }
+}

@@ -1,0 +1,157 @@
+.footer {
+    padding: 0 90px 0;
+
+    &-block {
+        padding: 95px 0;
+        background: #E5F2EF;
+        width: 100%;
+        min-height: 557px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            align-items: flex-start;
+
+            &-d-flex {
+                display: flex;
+                gap: 50px;
+            }
+
+            &-number {
+                display: flex;
+                gap: 53px;
+
+                &__link {
+                    display: flex;
+                    align-items: center;
+                    gap: 9px;
+
+                    font-family: 'Lato' sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 200%;
+                    color: #545454;
+                }
+            }
+
+            &-icons {
+                display: flex;
+                align-items: center;
+                gap: 27px;
+
+                &__link {
+                    font-size: 23px;
+                    color: #0152A8;
+                }
+            }
+        }
+
+        &-bottom {
+            max-width: 1200px;
+            width: 100%;
+            margin-top: 63px;
+
+            &-col {
+                &__h3 {
+                    font-family: 'Montserrat' sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 141%;
+                    color: #1C1C1C;
+                }
+
+                &__p {
+                    font-family: 'Montserrat' sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 114.5%;
+                    color: #1C1C1C;
+                }
+
+                &__li {
+                    font-family: 'Lato' sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 200%;
+                    color: #545454;
+                }
+
+                &__description {
+                    font-family: 'Lato' sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 142%;
+                    color: #545454;
+                    margin-bottom: 16px;
+                }
+
+                &__input {
+                    max-width: 325.7px;
+                    width: 100%;
+                    min-height: 60px;
+                    padding: 17px 25px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #B9B9B9;
+                    background: #fff;
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                        border: 1px solid #B9B9B9;
+                        padding: 16px 24px;
+                    }
+                }
+
+                &__btn {
+                    max-width: 138px;
+                    width: 100%;
+                    min-height: 60px;
+                    background: #0152A8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 16px;
+
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #FFFFFF;
+                    transition: .6s;
+
+                    &:hover {
+                        background: none;
+                        border: 1px solid #0152A8;
+                        color: #0152A8;
+                    }
+                }
+            }
+        }
+    }
+
+    &__p {
+        font-family: 'Lato' sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 200%;
+        color: #545454;
+        text-align: center;
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,46 @@
+@import url('../libs/bootstrap/bootstrap-grid.min.css');
+@import url('../libs/bootstrap/css/bootstrap.css');
+@import url('../libs/fa/all.min.css');
+@import url('../fonts/Inter/stylesheet.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.line{
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: #DBDBDB;
+}
+
+
+@import './header';
+@import './footer';
+@import './home-page/banner';
+@import './home-page/services';
+@import './home-page/about';
+@import './home-page/clientLogo';
+@import './home-page/CTA';
+@import './home-page/specialist';
+@import './home-page/testimonial';
+@import './home-page/whyChoose.scss';

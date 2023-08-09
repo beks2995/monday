@@ -1,0 +1,121 @@
+.header {
+    min-height: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 39px;
+
+    &-top {
+        background: #0152A8;
+        min-height: 61px;
+        display: flex;
+        align-items: center;
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__title {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #FFFFFF;
+                margin-bottom: 0;
+            }
+
+            &-numbers {
+                display: flex;
+                align-items: center;
+                gap: 100px;
+
+                &__link {
+                    display: flex;
+                    align-items: center;
+                    gap: 9px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-text-box {
+                display: flex;
+                gap: 40px;
+
+                &__link {
+                    position: relative;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 160%;
+                    color: #1C1C1C;
+                    transition: .4s;
+
+                    &:nth-child(4) {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+
+                    &:hover {
+                        color: #0152A8;
+                    }
+
+                    &:hover::before {
+                        width: 100%;
+                    }
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 0%;
+                        height: 2px;
+                        background: #0152A8;
+                        position: absolute;
+                        bottom: -55px;
+                        transition: .5s;
+                    }
+
+                }
+            }
+
+            &__btn {
+                max-width: 188px;
+                width: 100%;
+                min-height: 61px;
+                background: #0FE3AF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #0FE3AF;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 160%;
+                color: #363636;
+                transition: .4s;
+
+                &:hover {
+                    background: none;
+                    border: 2px solid #0FE3AF;
+                }
+            }
+        }
+    }
+}
