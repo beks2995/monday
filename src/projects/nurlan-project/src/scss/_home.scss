@@ -1,0 +1,500 @@
+.home {
+    margin-bottom: 160px;
+
+    .container {
+        position: relative
+    }
+
+    &__title {
+        position: relative;
+        @include text(normal, 700, 72px, 140%, #333333);
+        margin-bottom: 46px;
+
+
+    }
+
+    &__right {
+        width: 59%;
+        position: absolute;
+        right: 12px;
+        top: 48px;
+        border-top: 2px solid #000000;
+        padding-top: 63px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__text {
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg);
+
+
+
+    }
+
+    &__experience-block {
+        position: absolute;
+        right: 0;
+        padding: 40px 48px;
+        background: #2C3878;
+        top: 138px;
+        right: 142px;
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+
+    }
+
+    &__projects,
+    &__teams,
+    &__experience {
+        text-align: center;
+
+    }
+
+    &__projects-number {
+        @include text(normal, 400, 52px, 160%, #FFFFFF)
+    }
+
+    &__projects-text {
+        @include text(normal, 400, 16px, 160%, #FFFFFF)
+    }
+
+    &__teams-number {
+        @include text(normal, 400, 52px, 160%, #FFFFFF)
+    }
+
+    &__teams-text {
+        @include text(normal, 400, 16px, 160%, #FFFFFF)
+    }
+
+    &__experience-number {
+        @include text(normal, 400, 52px, 160%, #FFFFFF)
+    }
+
+    &__experience-text {
+        @include text(normal, 400, 16px, 160%, #FFFFFF)
+    }
+
+    &__img {
+        height: 513px;
+        width: 100%;
+        background: url('../images/home/home/home.png') center/cover no-repeat;
+
+    }
+}
+
+.about {
+    margin-bottom: 160px;
+
+    &__subtitle {
+        position: relative;
+        margin-bottom: 20px;
+        @include text(normal, 500, 16px, 150%, #000000);
+
+
+        div {
+            width: 529px;
+            background: #000;
+            position: absolute;
+            top: 9px;
+            left: 71px;
+            border-top: 2px solid #000000;
+        }
+
+    }
+
+    &__title {
+        max-width: 1200px;
+        @include text(normal, 600, 36px, 170%, #333333);
+        margin-bottom: 60px;
+    }
+
+    &__main {
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+
+
+
+        &-profile {
+            position: absolute;
+            padding: 17px 52px 17px 20px;
+            background: #FFFFFF;
+            top: 27px;
+            right: 210px;
+
+
+            &-name {
+                @include text(normal, 600, 18px, 140%, #000000);
+
+            }
+
+            &-position {
+                @include text(normal, 400, 18px, 160%, #9C9C9C);
+                width: 133px;
+            }
+        }
+
+        &-right {
+            width: 223px;
+            margin-top: 197px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+
+            div {
+                @include text(normal, 400, 18px, 160%, #9C9C9C);
+            }
+
+            a {
+                width: 142px;
+                display: inline-block;
+                padding: 14px 32px;
+                background: #2C3878;
+                @include text(normal, 500, 14px, 150%, #FFFFFF);
+            }
+        }
+    }
+
+
+
+}
+
+.service {
+    margin-bottom: 172px;
+
+    &__layers {
+        position: relative;
+        height: 828px;
+        width: 100%;
+    }
+
+    &__top-layer {
+        position: relative;
+        max-width: 883px;
+        width: 100%;
+        z-index: 1;
+        padding: 0 40px 41px 0;
+        background: #FFFFFF;
+
+
+    }
+
+    &__subtitle {
+        position: relative;
+        margin-bottom: 20px;
+        @include text(normal, 500, 16px, 150%, #000000);
+
+
+        div {
+            width: 529px;
+            background: #000;
+            position: absolute;
+            top: 9px;
+            left: 84px;
+            border-top: 2px solid #000000;
+        }
+
+    }
+
+    &__title {
+        @include text(normal, 600, 36px, 170%, #333333);
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        @include text(normal, 400, 18px, 160%, #9C9C9C);
+    }
+
+    &__list {
+        justify-content: space-between;
+        margin-bottom: 34px;
+
+        &-bottom {
+            margin-bottom: 0;
+        }
+    }
+
+    &__left {
+        gap: 40px;
+    }
+
+    &__left-number,
+    &__left-title {
+        @include text(normal, 600, 24px, 140%, #333333);
+    }
+
+    &__bottom-layer {
+        position: absolute;
+        right: 0;
+        top: 304px;
+        max-width: 1076px;
+        width: 100%;
+        height: 682px;
+        background: url('../images/home/service/service.png') no-repeat;
+
+    }
+}
+
+.product {
+    margin-bottom: 222px;
+
+    &__subtitle {
+        position: relative;
+        margin-bottom: 20px;
+        @include text(normal, 500, 16px, 150%, #000000);
+
+
+        div {
+            width: 529px;
+            background: #000;
+            position: absolute;
+            top: 9px;
+            left: 96px;
+            border-top: 2px solid #000000;
+        }
+
+    }
+
+    &__about {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 73px;
+
+        h3 {
+            @include text(normal, 600, 36px, 170%, #333333);
+        }
+
+        div {
+            @include text(normal, 400, 18px, 160%, #9C9C9C);
+        }
+    }
+
+    &__list {
+        justify-content: space-between;
+        margin-bottom: 43px;
+
+        &-bottom {
+            margin-bottom: 0;
+        }
+    }
+
+    &__left {
+        gap: 80px;
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &-number,
+        &-title {
+            @include text(normal, 600, 32px, 140%, #333333);
+        }
+
+        &-text {
+            @include text(normal, 400, 18px, 160%, #333333);
+        }
+    }
+
+}
+
+.material {
+    margin-bottom: 167px;
+
+    &__left-subtitle {
+        position: relative;
+        margin-bottom: 20px;
+        @include text(normal, 500, 16px, 150%, #141414);
+
+
+        div {
+            width: 529px;
+            background: #000;
+            position: absolute;
+            top: 9px;
+            left: 97px;
+            border-top: 2px solid #000000;
+        }
+
+    }
+
+    &__left-title {
+        margin-bottom: 10px;
+        @include text(normal, 600, 36px, 170%, #333333);
+    }
+
+    &__left-text {
+        margin-bottom: 23px;
+        @include text(normal, 400, 18px, 160%, #9C9C9C);
+    }
+
+    &__left-btn {
+        display: inline-block;
+        padding: 14px 32px;
+        background: #FFFFFF;
+        border: 1px solid #3C3C3C;
+        @include text(normal, 500, 14px, 150%, #333333);
+    }
+
+    &__right {
+        height: 440px;
+        position: relative;
+        display: flex;
+        gap: 40px;
+
+
+    }
+
+    &__pics-left {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__pics-right {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        position: absolute;
+        right: 0;
+        top: -59px;
+
+        .material__pic-upper-bottom {
+            width: 195px;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .home {
+
+        &__right {
+            width: 50%;
+            position: absolute;
+            right: 12px;
+            top: 48px;
+            border-top: none;
+            padding-top: 63px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .home {
+
+        &__title {
+            font-size: 50px;
+        }
+
+        &__right{
+            display: flex;
+            top: 0;
+        }
+
+        &__experience-block {
+            position: absolute;
+            padding: 15px 23px;
+            background: #2C3878;
+            top: 100px;
+            right: 164px;
+            display: flex;
+            flex-direction: column;
+            gap: 37px;
+        }
+
+        &__projects-number{
+            font-size: 30px;
+        }
+        &__teams-number{
+            font-size: 30px;
+        }
+        &__experience-number{
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .home {
+
+        &__experience-block {
+            position: absolute;
+            right: 0;
+            padding: 20px 28px;
+            background: #2C3878;
+            top: 138px;
+            right: 90px;
+            display: flex;
+            flex-direction: column;
+            gap: 37px;
+
+        }
+    }
+
+    .about {
+        margin-bottom: 160px;
+
+
+        &__main {
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-between;
+            position: relative;
+
+            &-left {
+
+                img {
+                    width: 100%;
+                }
+            }
+
+
+            &-profile {
+                position: absolute;
+                padding: 17px 52px 17px 20px;
+                background: #FFFFFF;
+                top: 1px;
+                right: 1px;
+
+            }
+
+            &-right {
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+            }
+        }
+
+
+
+    }
+
+    .service {
+        &__top-layer {
+            position: relative;
+            max-width: 780px;
+            width: 100%;
+            z-index: 1;
+            padding: 0 40px 41px 0;
+            background: #FFFFFF;
+
+
+        }
+    }
+
+}

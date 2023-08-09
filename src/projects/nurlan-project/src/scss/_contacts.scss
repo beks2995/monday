@@ -1,0 +1,154 @@
+.contact {
+    &-us {
+        padding-top: 100px;
+
+        &__title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 140%;
+            /* or 78px */
+            text-align: center;
+
+            /* Grayscale/Black */
+
+            color: #000000;
+            padding-bottom: 36px;
+        }
+
+        &__text {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            /* or 29px */
+
+            text-align: center;
+
+            /* Grayscale/Black */
+
+            color: #000000;
+            padding-bottom: 57px;
+        }
+    }
+
+    &-form {
+        position: relative;
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #9C9C9C;
+            background: #FFFFFF;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            resize: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+
+        }
+
+        input[type=submit] {
+            position: absolute;
+            right: 46%;
+            top: 110%;
+            background: #2C3878;
+            color: white;
+            padding: 14px 32px;
+            border: 1px solid #3C3C3C;
+            cursor: pointer;
+        }
+
+
+
+    }
+
+    &-visit {
+        padding: 130px 0 100px;
+
+        &__line {
+            padding-left: 20px;
+        }
+
+        &__service {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            /* identical to box height, or 24px */
+
+
+            /* Grayscale/Black */
+
+            color: #000000;
+            padding: 100px 0 20px;
+        }
+
+        &__title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 170%;
+            /* or 61px */
+
+
+            /* Grayscale/50 */
+
+            color: #333333;
+        }
+
+        &__text {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            /* identical to box height, or 29px */
+
+
+            /* Grayscale/10 */
+
+            color: #9C9C9C;
+        }
+
+        &__maxtext {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 140%;
+            /* identical to box height, or 34px */
+
+
+            /* Grayscale/50 */
+
+            color: #333333;
+        }
+
+        &__mintext {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: #9C9C9C;
+        }
+
+        .row {
+            padding-left: 193px;
+        
+        }
+        .col-md-6{
+            padding: 0 60px;
+        }
+    }
+}

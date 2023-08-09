@@ -1,0 +1,433 @@
+@import "../fonts/Poppins/stylesheet.css";
+@import "./variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+@import "../fonts/Poppins/stylesheet.css";
+
+.header {
+    margin: 40px 0 97px;
+
+
+    &-container {
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__logo {
+        cursor: pointer;
+        position: fixed;
+        // z-index: 1;
+        z-index: 2;
+
+    }
+
+    &__nav {
+        display: flex;  
+        @include text(normal, 400, 16px, 160%, #333333);
+        align-items: center;
+        gap: 74px;
+        position: fixed;
+        right: 102px;
+        z-index: 1;
+
+
+
+
+        .header__links:hover {
+            @include text(normal, 600, 16px, 140%, #333333);
+        }
+
+        .header__links-btn {
+            width: 142px;
+            height: 49px;
+            padding: 14px 32px;
+            background: #2C3878;
+            @include text(normal, 500, 14px, 150%, #FFFFFF);
+        }
+
+        .header__links-btn:hover {
+            width: 142px;
+            height: 49px;
+            padding: 14px 32px;
+            background: #2C3878;
+            @include text(normal, 500, 14px, 150%, #FFFFFF);
+        }
+    }
+
+    &__burger {
+        display: none;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30px;
+        height: 18px;
+
+        span {
+            height: 2px;
+            width: 80%;
+            transform: scale(1);
+            background: #000;
+        }
+
+
+        &::before,
+        &::after {
+            content: ' ';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: #000;
+            transition: all 0.3s ease 0s;
+
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            width: 60%;
+            bottom: 0;
+        }
+
+
+        // Добавляем класс active для анимации иконки бургера
+
+        &.active span {
+            // background: white;
+            transform: scale(0); // Убирает среднюю полоску из бургера меню
+        }
+
+        &.active::before {
+            top:50%;
+            transform: rotate(-45deg) translate(0, -50%);
+        }
+
+        &.active::after {
+            top:50%;
+            transform: rotate(45deg) translate(0, 50%);
+            width: 100%;
+        }
+    }
+
+
+
+
+
+}
+
+
+
+.footer {
+
+    &-upper {
+        padding: 40px 120px;
+        background: #2C3878;
+        margin-bottom: 80px;
+
+        &__right-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__title {
+            @include text(normal, 600, 36px, 170%, #FFFFFF);
+        }
+
+        &__text {
+            @include text(normal, 400, 18px, 160%, #D9D9D9);
+        }
+
+        &__btn {
+            width: 142px;
+            padding: 14px 32px;
+            background: #FFFFFF;
+            display: inline-block;
+            @include text(normal, 500, 14px, 150%, #333333);
+        }
+    }
+
+    &-lower {
+
+        &__left {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__logo {
+            width: 126px;
+            height: 54px;
+        }
+
+
+        &__title {
+            @include text(normal, 600, 36px, 170%, #333333);
+        }
+
+        &__right-container {
+            margin-top: 32px;
+        }
+
+        &__right {
+            margin-left: 205px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        &__form-upper {
+            width: 440px;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 23px;
+
+
+
+
+            h3 {
+
+
+                width: 100%;
+
+                @include text(normal, 400, 18px, 160%, #333333);
+
+
+            }
+
+        }
+
+
+
+        &__form-lower {
+            width: 440px;
+            position: relative;
+
+            img {
+                position: absolute;
+                right: 8px;
+                z-index: 1;
+            }
+
+            input {
+                position: absolute;
+                width: 100%;
+                padding-bottom: 15px;
+                border: none;
+                border-bottom: 1px solid #141414;
+                @include text(normal, 400, 16px, 160%, #333333);
+            }
+
+            input::placeholder {
+                @include text(normal, 400, 16px, 160%, #D9D9D9);
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+
+        }
+
+        &__social-media {
+            margin: 80px 0 84px 240px;
+
+
+            &-title {
+                @include text(normal, 400, 16px, 160%, #333333);
+                margin-bottom: 11px;
+            }
+
+            &-list {
+                display: flex;
+                gap: 25px;
+
+                a {
+                    div {
+
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        background: #D9D9D9;
+                        border: 1px solid #D9D9D9;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .footer {
+
+        &-upper {
+            padding: 40px 120px;
+            background: #2C3878;
+            margin-bottom: 80px;
+
+            .row {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            &__left-container {
+                width: 100%;
+            }
+
+            &__right-container {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+
+        &-lower__right {
+            margin-left: 0;
+        }
+
+        &-lower {
+
+
+
+            &__social-media {
+                margin: 80px 0 84px 0px;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        &__nav {
+            @include text(normal, 400, 16px, 160%, #333333);
+            align-items: center;
+            gap: 50px;
+            position: fixed;
+            right: 102px;
+            z-index: 2;
+            right: 29px;
+
+
+            .header__links-btn {
+                margin-right: 0;
+                width: 142px;
+                height: 49px;
+                padding: 14px 32px;
+                background: #2C3878;
+                @include text(normal, 500, 14px, 150%, #FFFFFF);
+            }
+        }
+    }
+
+    .footer {
+
+        &-lower__right {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .open{
+        display: flex !important;
+    }
+
+    .header {
+
+        &__burger{
+            display: flex;
+            position: fixed;
+            right: 50px;
+        }
+
+        &__nav{
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 3;
+            overflow-y: auto;
+            padding: 50px 40px;
+            background: #2C3878;
+            color: #FFFFFF;
+            // animation: burgerAnimation 0.4s;
+
+            .header__links{
+                flex-direction: column;
+                gap: 30px;
+                justify-content: flex-start;
+            }
+
+            .header__links-btn{
+                width: 150px;
+                color: #2C3878;
+                background: white;
+                // border: 1px solid #FFFFFF;
+            }
+
+            .header__links:hover{
+                
+                color: white;
+            }
+
+            .header__links-btn:hover{
+                width: 150px;
+                color: #2C3878;
+                background: white;
+            }
+        }
+    }
+}
+
+@import "./variables";
+@import "./home";
+@import "./about";
+@import "./services";
+@import "./ourTeams";
+@import "./contacts";
+@import "./portfolio";
+@import "./minimalistRoom";
+@import "./modernRoom";
+@import "./vintageRoom";
+@import "./transitionalRoom";
+

@@ -1,0 +1,106 @@
+.modern {
+    padding-top: 100px;
+
+    &__title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 140%;
+        /* or 78px */
+        text-align: center;
+
+        /* Grayscale/Black */
+
+        color: #000000;
+        padding-bottom: 36px;
+    }
+
+    &__text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        /* or 29px */
+
+        text-align: center;
+
+        /* Grayscale/Black */
+
+        color: #000000;
+        padding-bottom: 57px;
+    }
+
+    &__img {
+        background: url(../images/portofolio/img3.png) center/cover no-repeat;
+        width: 100%;
+        min-height: 513px;
+    }
+
+    &__info {
+        padding: 100px 0 50px;
+
+        &-title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 140%;
+            /* identical to box height, or 34px */
+
+
+            /* Grayscale/50 */
+
+            color: #333333;
+            padding-bottom: 24px;
+        }
+
+        &-text {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            /* or 29px */
+
+
+            /* Grayscale/10 */
+
+            color: #9C9C9C;
+        }
+    }
+
+    &__bg {
+        &-first {
+            background: url(https://i.pinimg.com/564x/2b/7c/48/2b7c48e5c5fd9e8b6e28a6a7d941e2d4.jpg) center/cover no-repeat;
+            width: 100%;
+            min-height: 513px;
+        }
+
+        &-second {
+            background: url(https://i.pinimg.com/564x/36/7e/78/367e78e6f441128ba9ceb20146d35664.jpg) center/cover no-repeat;
+            width: 100%;
+            min-height: 513px;
+        }
+
+        &-third {
+            background: url(https://i.pinimg.com/564x/47/22/de/4722dee3138cc48bb94d4781dc4de72a.jpg) center/cover no-repeat;
+            width: 100%;
+            min-height: 513px;
+        }
+        &-fourth{
+            background: url(https://i.pinimg.com/564x/da/14/51/da1451012fe83b692c98fc85cb18dc56.jpg) center/cover no-repeat;
+            width: 100%;
+            min-height: 513px;   
+        }
+        &-fifth{
+            background: url(https://i.pinimg.com/564x/26/50/bd/2650bd35c15fa58d2b6327fab673d8b0.jpg) center/cover no-repeat;
+            width: 100%;
+            min-height: 513px;  
+        }
+        .row{
+            padding: 32px 0;
+        }
+    }
+}

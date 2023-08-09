@@ -1,0 +1,106 @@
+.portofolio {
+    padding-top: 100px;
+
+    &__title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 140%;
+        /* or 78px */
+        text-align: center;
+
+        /* Grayscale/Black */
+
+        color: #000000;
+        padding-bottom: 36px;
+    }
+
+    &__text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        /* or 29px */
+
+        text-align: center;
+
+        /* Grayscale/Black */
+
+        color: #000000;
+        padding-bottom: 57px;
+    }
+
+    &__img {
+        background: url(../images/minimalistRoom/bg1.png) center/cover no-repeat;
+        width: 100%;
+        min-height: 513px;
+    }
+
+    &__info {
+        padding: 100px 0 50px;
+
+        &-title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 140%;
+            /* identical to box height, or 34px */
+
+
+            /* Grayscale/50 */
+
+            color: #333333;
+            padding-bottom: 24px;
+        }
+
+        &-text {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            /* or 29px */
+
+
+            /* Grayscale/10 */
+
+            color: #9C9C9C;
+        }
+    }
+
+    &__bg {
+        &-first {
+            background: url(../images/minimalistRoom/img1.png) center/cover no-repeat;
+            width: 100%;
+            min-height: 513px;
+        }
+
+        &-second {
+            background: url(../images/minimalistRoom/img2.png) center/cover no-repeat;
+            width: 100%;
+            min-height: 513px;
+        }
+
+        &-third {
+            background: url(../images/minimalistRoom/img3.png) center/cover no-repeat;
+            width: 100%;
+            min-height: 513px;
+        }
+        &-fourth{
+            background: url(../images/minimalistRoom/img4.png) center/cover no-repeat;
+            width: 100%;
+            min-height: 513px;   
+        }
+        &-fifth{
+            background: url(../images/minimalistRoom/img5.png) center/cover no-repeat;
+            width: 100%;
+            min-height: 513px;  
+        }
+        .row{
+            padding: 32px 0;
+        }
+    }
+}
