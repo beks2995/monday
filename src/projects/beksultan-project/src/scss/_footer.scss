@@ -132,12 +132,10 @@
                     font-size: 16px;
                     line-height: 160%;
                     color: #FFFFFF;
-                    transition: .6s;
+                    transition: .4s;
 
                     &:hover {
-                        background: none;
-                        border: 1px solid #0152A8;
-                        color: #0152A8;
+                        background: #143450;
                     }
                 }
             }

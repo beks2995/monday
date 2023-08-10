@@ -24,7 +24,13 @@ ul {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -34,7 +40,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   height: 1px;
   display: block;
-  background: #DBDBDB;
+  background: #dbdbdb;
 }
 
 .header {
@@ -45,7 +51,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 39px;
 }
 .header-top {
-  background: #0152A8;
+  background: #0152a8;
   min-height: 61px;
   display: flex;
   align-items: center;
@@ -61,7 +67,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 0;
 }
 .header-top-content-numbers {
@@ -78,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .header-bottom-content {
   display: flex;
@@ -96,8 +102,11 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
-  color: #1C1C1C;
+  color: #1c1c1c;
   transition: 0.4s;
+}
+.header-bottom-content-text-box__link__icon {
+  color: #0152a8;
 }
 .header-bottom-content-text-box__link:nth-child(4) {
   display: flex;
@@ -105,7 +114,11 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 8px;
 }
 .header-bottom-content-text-box__link:hover {
-  color: #0152A8;
+  color: #0152a8;
+}
+.header-bottom-content-text-box__link:hover .header-bottom-content-text-box__link__icon {
+  transition: 0.6s;
+  transform: rotate(180deg);
 }
 .header-bottom-content-text-box__link:hover::before {
   width: 100%;
@@ -115,7 +128,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
   width: 0%;
   height: 2px;
-  background: #0152A8;
+  background: #0152a8;
   position: absolute;
   bottom: -55px;
   transition: 0.5s;
@@ -124,11 +137,11 @@ h1, h2, h3, h4, h5, h6, p {
   max-width: 188px;
   width: 100%;
   min-height: 61px;
-  background: #0FE3AF;
+  background: #0fe3af;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #0FE3AF;
+  border: 2px solid #0fe3af;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -139,7 +152,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .header-bottom-content__btn:hover {
   background: none;
-  border: 2px solid #0FE3AF;
+  border: 2px solid #0fe3af;
 }
 
 .footer {
@@ -261,12 +274,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 16px;
   line-height: 160%;
   color: #FFFFFF;
-  transition: 0.6s;
+  transition: 0.4s;
 }
 .footer-block-bottom-col__btn:hover {
-  background: none;
-  border: 1px solid #0152A8;
-  color: #0152A8;
+  background: #143450;
 }
 .footer__p {
   font-family: "Lato" sans-serif;
@@ -345,9 +356,7 @@ h1, h2, h3, h4, h5, h6, p {
   transition: 0.6s;
 }
 .banner-block-left__btn:hover {
-  border: 1px solid #0152A8;
-  color: #0152A8;
-  background: none;
+  background: #143450;
 }
 
 .services {
@@ -553,9 +562,7 @@ h1, h2, h3, h4, h5, h6, p {
   transition: 0.5s;
 }
 .about-block__btn:hover {
-  background: none;
-  border: 1px solid #0152A8;
-  color: #0152A8;
+  background: #143450;
 }
 
 .clientLogo {
@@ -694,9 +701,7 @@ h1, h2, h3, h4, h5, h6, p {
   transition: 0.5s;
 }
 .specialist-col-text-box__btn:hover {
-  background: none;
-  border: 1px solid #0152A8;
-  color: #0152A8;
+  background: #143450;
 }
 
 .testimonial {
