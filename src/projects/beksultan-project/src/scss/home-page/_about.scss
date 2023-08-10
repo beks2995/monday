@@ -1,5 +1,7 @@
 .about {
     background: url(../img/aboutus/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
     height: 710px;
     position: relative;
     margin: 0px 88px;
@@ -27,6 +29,7 @@
             line-height: 142%;
             letter-spacing: 0.415em;
             text-transform: uppercase;
+            margin-bottom: 13px;
         }
 
         &__h3 {
@@ -36,7 +39,7 @@
             font-size: 30px;
             line-height: 130%;
             color: #1C1C1C;
-            margin-top: 13px;
+            margin-bottom: 23px;
         }
 
         &__description {
